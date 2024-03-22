@@ -111,16 +111,44 @@
             <img src="./images/background-aboutus.png" alt="background" class="object-cover w-full h-full">
         </div>
     </div>
-    <footer class="bg-primary2 py-12 w-full">
-        <div class="container text-center">
-            <p class="text-white sm:text-base text-sm"> Level 23, Tower One, International Towers 100 Barangaroo Avenue
-                Sydney NSW 2000</p>
+    <footer>
+        <div class="bg-primary2 py-8 w-full">
+            <div class="container text-center mb-5 mx-auto">
+                <p class="text-white sm:text-base text-sm "> Level 23, Tower One, International Towers 100 Barangaroo
+                    Avenue Sydney NSW 2000</p>
+            </div>
+            <ul class="flex items-center justify-center sm:space-x-10">
+                <li class="text-white">
+                    <a href="#" class="sm:text-lg hover:text-secondary">Home</a>
+                </li>
+                <li class="text-white  hover:text-secondary">
+                    <a href="#" class="sm:text-lg  hover:text-secondary">About Us</a>
+                </li>
+                <li class="text-white ">
+                    <a href="#" class="sm:text-lg hover:text-secondary ">Contact Us</a>
+                </li>
+                <li class="text-white ">
+                    <a href="#" class="sm:text-lg hover:text-secondary ">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-grey flex justify-center items-center py-4">
+            <p class="text-">©2024 AuzCapital | All Rights Reserved</p>
         </div>
     </footer>
 
 </body>
 <script src="./assets/splide-4.1.3/dist/js/splide.min.js"></script>
 <script src="./assets/splide-4.1.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
+<script>
+    window.addEventListener("scroll", (e) => {
+        var header = document.querySelector("header");
+        if (window.scrollY > header.offsetHeight) {
+            header.classList.add("bg-primary");
+        } else {
+            header.classList.remove("bg-primary");
+        }
+    })
+</script>
 
 </html>
