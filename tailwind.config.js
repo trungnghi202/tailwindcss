@@ -26,6 +26,7 @@ module.exports = {
             bermuda: "#78dcca",
             primary: "#00234C",
             secondary: "#DD9C6B",
+            secondary2: "#E58E4D",
             primary2: "#001E40",
             grey: "#CECECE",
             grey2: "#545454",
