@@ -1,0 +1,8 @@
+.wrapper-eye {
+    transform: translateY(-50%);
+}
+
+.wrapper-eye .btn-eye {
+    fill: #fff;
+    cursor: pointer;
+}
